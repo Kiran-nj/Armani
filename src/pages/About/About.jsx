@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
   return (
     <div className='h-auto py-5'>
-      <header className='h-28 bg-gray-300 text-2xl font-bold flex flex-col gap-1 justify-center items-center' 
-      style={{ backgroundImage: 'url(/src/assets/images/about_us/aboutUsImg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <header className='h-64 bg-gray-300 text-2xl font-bold flex flex-col gap-1 justify-center items-center opacity-80' 
+      style={{ backgroundImage: 'url(/src/assets/images/about_us/aboutUsBg2.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <span>About us</span>
         <p className='text-sm font-extralight'>House of used cars</p>
       </header>

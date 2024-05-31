@@ -68,7 +68,7 @@ function SecondHeader() {
           <span className="text-xs">HOME</span>
         </Link>
         <Link
-          to="/"
+          to="/products"
           className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
         >
           <FaCarSide className="text-xl " />

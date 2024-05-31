@@ -12,6 +12,7 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Home from './pages/Home/Home';
 import Layout from './Layout';
 import About from './pages/About/About';
+import Cars from './pages/StockCars/Cars';
 import SellCar from './pages/SellCar/SellCar';
 
 
@@ -22,6 +23,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Layout />}>
         <Route path="" element={<Home />} />
+        <Route path="products" element={<Cars />} />
         <Route path="about" element={<About />} />
         <Route path="sellcar" element={<SellCar />} />
       </Route>
