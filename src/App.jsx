@@ -11,6 +11,7 @@ import LocomotiveScroll from "locomotive-scroll";
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Layout from './Layout';
+import About from './pages/About/About';
 
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
     createRoutesFromElements(
       <Route path="/" element={<Layout />}>
         <Route path="" element={<Home />} />
-        {/* <Route path="about" element={<About />} /> */}
+        <Route path="about" element={<About />} />
       </Route>
     )
   );
