@@ -11,6 +11,15 @@ gsap.registerPlugin(ScrollTrigger);
 
 function GSAPslider() {
   const Imagearr = [img1, img2, img3, img4, img5];
+  const PriceArr = ["₹5000000", "₹6000000", "₹7000000", "₹8000000", "₹9000000"];
+  const ModelArr = [
+    "Model :2018",
+    "Model :2022",
+    "Model :2020",
+    "Model :2020",
+    "Model :2021",
+  ];
+
   const Namearr = [
     "LAMBORGINI",
     "PORCHE",
@@ -50,6 +59,7 @@ function GSAPslider() {
         ease: "none",
         stagger: 0.5,
         opacity: 1,
+        scale: 2,
         scrollTrigger: {
           trigger: `.car-${currentIndex}`,
           toggleActions: "restart none none none ",
@@ -59,6 +69,36 @@ function GSAPslider() {
     gsap.fromTo(
       `.name-${currentIndex}`,
       {
+        x: 100,
+        y: -200,
+        borderRadius: "0%",
+        yoyo: false,
+        rotation: 0,
+        opacity: 0,
+      },
+      {
+        y: -100,
+        x: 100,
+        repeat: 0,
+        yoyo: false,
+        rotation: 0,
+        borderRadius: "0%",
+        duration: 1.2,
+        ease: "none",
+        stagger: 0.5,
+        scale: 1.5,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: `.car-${currentIndex}`,
+          toggleActions: "restart none none none ",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `.price-${currentIndex}`,
+      {
+        x: -400,
         y: 0,
         borderRadius: "0%",
         yoyo: false,
@@ -67,6 +107,7 @@ function GSAPslider() {
       },
       {
         y: 0,
+        x: -200,
         repeat: 0,
         yoyo: false,
         rotation: 0,
@@ -74,9 +115,39 @@ function GSAPslider() {
         duration: 1.2,
         ease: "none",
         stagger: 0.5,
+        scale: 1.2,
         opacity: 1,
         scrollTrigger: {
-          trigger: `.car-${currentIndex}`,
+          trigger: `.price-${currentIndex}`,
+          toggleActions: "restart none none none ",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      `.model-${currentIndex}`,
+      {
+        x: -500,
+        y: 0,
+        borderRadius: "0%",
+        yoyo: false,
+        rotation: 0,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        x: -300,
+        repeat: 0,
+        yoyo: false,
+        rotation: 0,
+        borderRadius: "0%",
+        duration: 1.2,
+        ease: "none",
+        stagger: 0.5,
+        scale: 1.2,
+        opacity: 1,
+        scrollTrigger: {
+          trigger: `.model-${currentIndex}`,
           toggleActions: "restart none none none ",
         },
       }
@@ -100,6 +171,27 @@ function GSAPslider() {
                 {Namearr[index]}
               </p>
             </div>
+
+            <div
+              className={`w-1/2 flex justify-center items-center mb-40 price-${index} ${
+                currentIndex === index ? "block" : "hidden"
+              }`}
+            >
+              <p className="text-slate-500 text-2xl font-extrabold price">
+                {PriceArr[index]}
+              </p>
+            </div>
+
+            <div
+              className={`w-1/2 flex justify-center items-center mb-40 model-${index} ${
+                currentIndex === index ? "block" : "hidden"
+              }`}
+            >
+              <p className="text-slate-500 text-xl font-extrabold model">
+                {ModelArr[index]}
+              </p>
+            </div>
+
             <div
               className={`w-1/2 flex justify-center items-center car-${index} ${
                 currentIndex === index ? "block" : "hidden"
