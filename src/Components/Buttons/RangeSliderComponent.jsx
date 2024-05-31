@@ -11,10 +11,17 @@ const RangeSliderComponent = () => {
   };
 
   return (
+    <>
     <div className="px-10 flex justify-center items-center gap-5">
       <span className="text-sm whitespace-nowrap">PRICE RANGE</span>
       <RangeSlider min={1000000} max={40000000} defaultValue={[1000000, 9000000]} step={10000} className="border border-gray-200" id="range-slider-component"  onChange={handleChange} />
     </div>
+    {/* <div className="w-[80%] flex justify-around">
+      <span>Rs 1000000</span>
+      <span>Rs 40000000</span>
+      </div> */}
+    </>
+    
   );
 };
 

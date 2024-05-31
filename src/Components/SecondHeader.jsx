@@ -50,73 +50,42 @@ function SecondHeader() {
   }, []);
 
   return (
-    <div>
+    <div className="w-full">
       <div
-        className={`hidden fixed h-screen w-24 lg:flex flex-col justify-around bg-black gap-4 py-2 
-      px-4 text-xl md:text-2xl`}
+        className={`hidden md:flex fixed h-screen  flex-col  justify-between py-2 px-1 text-xs md:text-sm`}
       >
-        <Link to="/">
-          <div className="hover:text-white  text-gray-500 items-center gap-2 text-sm  p-2   comp">
-            <FaCar className="text-3xl ml-3 " /> Stockcars{" "}
-          </div>
+         <Link to="/" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaCar className="text-xl " />
+            <span className="text-xs">HOME</span>
         </Link>
-        <Link to="/sellcar">
-          <div className=" hover:text-white text-gray-500 items-center gap-2 text-sm   p-2 comp  ">
-            <FaCar className="text-3xl ml-3 " /> Sellcars{" "}
-          </div>
+        <Link to="/" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaCar className="text-xl " />
+            <span className="text-xs flex justify-center ">STOCK CARS</span>
         </Link>
-        <div className=" hover:text-white text-gray-500 items-center gap-2 text-sm  p-2  comp ">
-          <FaShop className="text-3xl ml-3" />
-          Showroom{" "}
-        </div>
-        <div className=" hover:text-white text-gray-500 items-center gap-2 text-sm  p-2 comp  ">
-          <FaImage className="text-3xl ml-3" />
-          Gallery{" "}
-        </div>
-        <Link to="/insurance">
-          <div className=" hover:text-white text-gray-500 items-center gap-2 text-sm  p-2 comp ">
-            <FaHelmetSafety className="text-3xl ml-3" /> Insurance
-          </div>
+        <Link to="/sellcar" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaCar className="text-xl " />
+            <span className="text-xs flex justify-center ">SELL CARS</span>
         </Link>
-        <div className=" hover:text-white  text-gray-500 items-center gap-2 text-sm  p-2  comp ">
-          <FaCalculator className="text-3xl ml-3" /> <p className="ml-4">EMI</p>{" "}
-          <p>Calculator</p>
-        </div>
-        {/*     <div className=' text-gray-500 items-center gap-2 text-sm rounded-lg p-2  comp '> 
-      <GiAutoRepair className='text-3xl '/> Servicing </div> */}
-      </div>
-      <div className=" lg:hidden md:flex">
-        <div className="flex justify-around gap-9">
-          <Link to="/">
-            <div className="flex  items-center gap-2   comp ">
-              Stock Cars <FaCar />{" "}
-            </div>
-          </Link>
-          <Link to="/sellcar">
-            <div className="flex  items-center gap-2  comp">
-              Sell Cars <FaCar />{" "}
-            </div>
-          </Link>
-          <div className="flex items-center gap-2  gradient-button comp">
-            Servicing <GiAutoRepair />{" "}
-          </div>
-        </div>
-        <div className="flex justify-between gap-4">
-          <div className="flex items-center gap-2  gradient-button comp ">
-            Showroom <FaShop />{" "}
-          </div>
-          <div className="flex items-center gap-2  gradient-button comp">
-            Gallery <FaImage />{" "}
-          </div>
-          <Link to="/insurance">
-            <div className="flex items-center gap-2  gradient-button comp">
-              Insurance <FaHelmetSafety />{" "}
-            </div>
-          </Link>
-          <div className="flex items-center gap-2  gradient-button comp">
-            EMICalculator <FaCalculator />{" "}
-          </div>
-        </div>
+        <Link to="/" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaShop className="text-xl " />
+            <span className="text-xs flex justify-center ">SHOWROOM</span>
+        </Link>
+        <Link to="/" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaImage className="text-xl " />
+            <span className="text-xs flex justify-center ">GALLERY</span>
+        </Link>
+        <Link to="/insurance" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaHelmetSafety className="text-xl " />
+            <span className="text-xs flex justify-center ">INSURANCE</span>
+        </Link>
+        <Link to="/about" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaHelmetSafety className="text-xl " />
+            <span className="text-xs flex justify-center ">ABOUT US</span>
+        </Link>
+        <Link to="/" className="hover:text-white  text-gray-500 flex flex-col justify-center items-center">
+            <FaCalculator className="text-xl " />
+            <span className="text-xs flex flex-col justify-center items-center ">EMI<p>CALCULATOR</p></span>
+        </Link>
       </div>
     </div>
   );
