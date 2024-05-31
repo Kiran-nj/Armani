@@ -130,7 +130,7 @@ const Images = ({ imgIndex }) => {
               scale: imgIndex === idx ? 0.95 : 0.85,
             }}
             transition={SPRING_OPTIONS}
-            className=" w-screen h-[70vh] shrink-0 rounded-xl bg-neutral-800 object-cover"
+            className=" w-full h-[70vh] shrink-0 rounded-xl bg-neutral-800 object-cover"
           />
         );
       })}
