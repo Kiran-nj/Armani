@@ -26,11 +26,11 @@ const status = [
 
 function FilterSearch() {
   return (
-    <div className='p-20 text-black'>
-        <div className=' flex justify-around'><h1>Brand  </h1>  <h1>Model</h1>  <h1>VehicleStatus</h1>  </div>
+    <div className='p-5 text-black w-full bg-white border-b-2 border-b-gray-300'>
+        {/* <div className='flex justify-around'><h1>Brand  </h1>  <h1>Model</h1>  <h1>VehicleStatus</h1>  </div> */}
 
-        <div className='p-3   flex justify-around'>  <DropdownButton options={carBrands}/>   <DropdownButton options={model}/>   <DropdownButton options={status}/> </div>
-        <div className='w-full flex items-center mt-16'>
+        <div className='p-3 flex justify-around w-[70%] '>  <DropdownButton options={carBrands} type={'brand'} />   <DropdownButton type={'model'} options={model}/>  </div>
+        <div className='w-full flex items-center '>
           <div className='w-[80%]'> <RangeSlider /></div> 
          <button className='bg-slate-700 h-14 w-20 rounded-lg'>Search</button>
          </div>

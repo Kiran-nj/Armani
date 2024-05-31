@@ -1,14 +1,7 @@
 import React, { useState } from 'react';
 
-const DropdownButton = ({ options, type=null }) => {
-  let dropDownPlaceholder = 'Select';
-  if(type === 'brand'){
-    dropDownPlaceholder = 'Any Brand'
-  } else if (type === 'model'){
-    dropDownPlaceholder = 'Any Model'
-  }
-  
-  const [selectedOption, setSelectedOption] = useState(dropDownPlaceholder);
+const DropdownButton = ({ options }) => {
+  const [selectedOption, setSelectedOption] = useState('Select');
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const handleOptionClick = (option) => {

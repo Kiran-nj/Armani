@@ -8,8 +8,8 @@ const RangeSlider = () => {
   };
 
   return (
-    <div className="flex flex-col ml-20 mb-10">
-      <h1 className="text-2xl font-bold mb-4">Select Min Price </h1>
+    <div className="flex ml-20 mb-10">
+      <h1 className="text-xs font-bold ">Select Min Price </h1>
       <div className="w-1/2">
         <input
           type="range"
