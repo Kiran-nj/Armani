@@ -14,7 +14,7 @@ export default function Navbar() {
                   gsap.fromTo(
                     ".logo",
                     {
-                      x: 500,
+                      x: 0,
                       borderRadius: "0%",
                       yoyo: false,
                       rotation: 0,
@@ -26,7 +26,7 @@ export default function Navbar() {
                       yoyo: false,
                       rotation: 0,
                       borderRadius: "100%",
-                      duration: .7,
+                      duration: .3,
                       ease: "none",
                       stagger:0.5 ,
                       opacity:1,
@@ -40,7 +40,7 @@ export default function Navbar() {
                   gsap.fromTo(
                     "#kard",
                     {
-                      y: 700,
+                      y: 0,
                       borderRadius: "0%",
                       yoyo: false,
                       rotation: 0,
