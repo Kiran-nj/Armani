@@ -43,7 +43,7 @@ export const SwipeCarousel = () => {
         delay:3.5,
         yoyo: false,
         rotation: 0,
-        borderRadius: "150%",
+        borderRadius: "0%",
         duration: 2,
         ease: "none",
         stagger:0.5 ,
