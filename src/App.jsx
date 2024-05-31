@@ -8,23 +8,28 @@ import CarCards from './Components/CarCards';
 import Footer from './Components/Footer';
 import GradientButton from './Components/Buttons/GradientButton';
 import LocomotiveScroll from "locomotive-scroll";
+import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import Layout from './Layout';
 
 
 function App() {
-  const locomotiveScroll = new LocomotiveScroll();
+
+
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <Route path="/" element={<Layout />}>
+        <Route path="" element={<Home />} />
+        {/* <Route path="about" element={<About />} /> */}
+      </Route>
+    )
+  );
+
 
   return (
-    <>
-    <Navbar />
-    <SecondHeader/>
-    <SwipeCarousel />
- {/*   <FilterSearch /> */}
-    <CarCards/>
-    <Footer />
-
-    {/* <GradientButton /> */}
-
-    </>
+    <React.StrictMode>
+      <RouterProvider router={router} />
+    </React.StrictMode>
   )
 }
 

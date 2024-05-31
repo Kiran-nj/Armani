@@ -1,15 +1,6 @@
-import car1 from '/src/assets/arm1.jpeg'
-import car2 from '/src/assets/arm2.jpeg'
-import car3 from '/src/assets/arm3.jpeg'
-import car4 from '/src/assets/arm4.jpeg'
-import car5 from '/src/assets/arm5.jpeg'
-
-
-
-export  const Latest_Products = [
+export const Latest_Products = [
     {
         'id': 1,
-        'img': car1,
         'build_company': 'Maruti Suzuki',
         'type': 'Sedan',
         'name': 'Ciaz',
@@ -21,7 +12,6 @@ export  const Latest_Products = [
     },
     {
         'id': 2,
-        'img': car2,
         'build_company': 'Honda',
         'type': 'SUV',
         'name': 'CR-V',
@@ -33,7 +23,6 @@ export  const Latest_Products = [
     },
     {
         'id': 3,
-        'img': car3,
         'build_company': 'Toyota',
         'type': 'Sedan',
         'name': 'Camry',
@@ -45,7 +34,6 @@ export  const Latest_Products = [
     },
     {
         'id': 4,
-        'img': car4,
         'build_company': 'Hyundai',
         'type': 'Hatchback',
         'name': 'i20',
@@ -57,7 +45,6 @@ export  const Latest_Products = [
     },
     {
         'id': 5,
-        'img': car5,
         'build_company': 'Ford',
         'type': 'SUV',
         'name': 'EcoSport',

@@ -54,9 +54,7 @@ function SecondHeader() {
   return (
     <div >
     <div
-      className={`hidden lg:flex justify-around bg-black gap-4 py-2 px-4 text-xl md:text-2xl ${
-        isSticky ? 'fixed top-0 left-0 w-full z-50' : ''
-      }`}
+      className={`hidden fixed h-screen w-24 lg:flex flex-col justify-around bg-black gap-4 py-2 px-4 text-xl md:text-2xl`}
     >
         <Link to="/" >
       <div className='flex text-gray-500 items-center gap-2 text-xl rounded-lg p-2  gradient-button comp' >Stock Cars <FaCar/> </div>

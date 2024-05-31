@@ -88,7 +88,7 @@ export const SwipeCarousel = () => {
   };
 
   return (
-    <div className="relative slider overflow-hidden bg-neutral-950 py-1">
+    <div className="w-[100%] relative slider overflow-hidden bg-neutral-950 py-1">
       <motion.div
         drag="x"
         dragConstraints={{

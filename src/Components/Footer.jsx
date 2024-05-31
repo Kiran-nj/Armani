@@ -65,12 +65,14 @@ function Footer() {
 
          {/*  <h2 className="text-lg font-bold mb-4 mt-6">Newsletter</h2>
           <p className="mb-4">Keep up on our always evolving products features and technology. Enter your e-mail and subscribe to our newsletter.</p> */}
-          <div className="flex items-center bg-gray-800 rounded-md p-2">
+          
+          {/* Screen width issue */}
+          {/* <div className="flex items-center bg-gray-800 rounded-md p-2">
             <input type="email" placeholder="Enter Email Address" className="bg-transparent border-none focus:outline-none text-white flex-grow" />
             <button className="text-white p-2">
               <FaEnvelope />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
 

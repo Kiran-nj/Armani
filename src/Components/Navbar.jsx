@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaFacebook, FaInstagram, FaPhone, FaTwitter, FaYoutube } from "react-icons/fa";
-import Logo from "../../public/navbar_logo.jpeg"
+import Logo from "/src/assets/images/navbar_logo.jpeg"
 import { Link } from 'react-router-dom';
 import GradientButton from './Buttons/GradientButton';
 import './Buttons/GradientButton.css';
@@ -73,7 +73,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-black ">
+    <nav className="flex-1 bg-red-700 border-gray-200 dark:bg-black w-[100%]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <Link to="/">
         <a  className="flex items-center space-x-3 rtl:space-x-reverse">
