@@ -105,7 +105,11 @@ function GSAPslider() {
                 currentIndex === index ? "block" : "hidden"
               }`}
             >
-              <img className="w-[450px] car" src={image} alt={Namearr[index]} />
+              <img
+                className="w-[450px] car "
+                src={image}
+                alt={Namearr[index]}
+              />
             </div>
           </React.Fragment>
         ))}
