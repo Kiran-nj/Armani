@@ -1,7 +1,6 @@
 import React from 'react'
-import Navbar from '../../Components/Navbar'
-import SecondHeader from '../../Components/SecondHeader'
 import { SwipeCarousel } from '../../Components/Carousel'
+import FilterSearch from '../../Components/FilterSearch'
 import CarCards from '../../Components/CarCards'
 import Footer from '../../Components/Footer'
 import LocomotiveScroll from 'locomotive-scroll'
@@ -13,8 +12,9 @@ const Home = () => {
   return (
     <div className=''>
       <SwipeCarousel />
-      {/*   <FilterSearch /> */}
-      {/* <CarCards /> */}
+      <div className="flex-1 bg-white">
+        <CarCards />
+      </div>
 
       {/* <GradientButton /> */}
 

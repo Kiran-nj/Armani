@@ -4,8 +4,8 @@ import {Latest_Products} from '../Components/Data'
 function CarCards() {
 
     return (
-        <div className="container mx-auto p-4 mt-4">
-          <div className='flex justify-center text-white items-center text-2xl pb-10'>NEW AND PRE OWNED LUXURY PREMIUM CARS</div>
+        <div className="container mx-auto p-4 mt-4 text-black">
+          <div className='flex justify-center  items-center text-2xl pb-10'>NEW AND PRE OWNED LUXURY PREMIUM CARS</div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
             {Latest_Products.map((product) => (
               <div key={product.id} className=" p-4 rounded-lg shadow-lg">

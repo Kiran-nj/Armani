@@ -12,7 +12,7 @@ const Layout = () => {
       </div>
       <div className='flex-1'>
         <Navbar />
-        <div className='pl-5'>
+        <div className='md:pl-5'>
         <Outlet />
         <Footer />
         </div>

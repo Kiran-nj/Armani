@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaYoutube, FaEnvelope, FaMapMarkerA
 
 function Footer() {
   return (
-    <div className="bg-black text-white py-10">
+    <div className="bg-black text-white p-10">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Contact Information */}
         <div>

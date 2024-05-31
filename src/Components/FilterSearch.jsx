@@ -26,7 +26,7 @@ const status = [
 
 function FilterSearch() {
   return (
-    <div className='p-20'>
+    <div className='p-20 text-black'>
         <div className=' flex justify-around'><h1>Brand  </h1>  <h1>Model</h1>  <h1>VehicleStatus</h1>  </div>
 
         <div className='p-3   flex justify-around'>  <DropdownButton options={carBrands}/>   <DropdownButton options={model}/>   <DropdownButton options={status}/> </div>
