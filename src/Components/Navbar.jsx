@@ -73,7 +73,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex-1 bg-red-700 border-gray-200 dark:bg-black w-[100%]">
+    <nav className="flex-1  border-gray-200 dark:bg-black w-[100%]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 ">
         <Link to="/">
         <a  className="flex items-center space-x-3 rtl:space-x-reverse">
