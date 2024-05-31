@@ -8,7 +8,7 @@ const RangeSlider = () => {
   };
 
   return (
-    <div className="flex ml-20 mb-10">
+    <div className="flex  mb-10">
       <h1 className="text-xs font-bold ">Select Min Price </h1>
       <div className="w-1/2">
         <input
@@ -19,7 +19,7 @@ const RangeSlider = () => {
           onChange={handleChange}
           className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700"
         />
-        <div className="flex justify-between mt-2 text-gray-600">
+        <div className="flex justify-between text-gray-600">
           <span>500,000</span>
           <span>4,000,000</span>
         </div>
