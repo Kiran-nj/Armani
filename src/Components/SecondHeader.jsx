@@ -64,42 +64,42 @@ function SecondHeader() {
           to="/"
           className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
         >
-          <FaHome className="text-4xl " />
+          <FaHome className="text-xl " />
           <span className="text-xs">HOME</span>
         </Link>
         <Link
           to="/"
           className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
         >
-          <FaCarSide className="text-4xl " />
+          <FaCarSide className="text-xl " />
           <span className="text-xs flex justify-center ">STOCK CARS</span>
         </Link>
         <Link
           to="/sellcar"
           className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
         >
-          <FaCar className="text-4xl " />
+          <FaCar className="text-xl " />
           <span className="text-xs flex justify-center ">SELL CARS</span>
         </Link>
         <Link
           to="/"
           className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
         >
-          <FaShop className="text-4xl " />
+          <FaShop className="text-xl " />
           <span className="text-xs flex justify-center ">SHOWROOM</span>
         </Link>
         <Link
           to="/"
           className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
         >
-          <FaImage className="text-4xl " />
+          <FaImage className="text-xl " />
           <span className="text-xs flex justify-center ">GALLERY</span>
         </Link>
         <Link
           to="/insurance"
           className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
         >
-          <FaHelmetSafety className="text-4xl " />
+          <FaHelmetSafety className="text-xl " />
           <span className="text-xs flex justify-center ">INSURANCE</span>
         </Link>
         <Link
