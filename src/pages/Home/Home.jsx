@@ -5,6 +5,8 @@ import CarCards from "../../Components/CarCards";
 import Footer from "../../Components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
 import GSAPslider from "../../Components/GSAPslider";
+import Modal from "../../Components/Modals/Modal";
+import Services from "../../Components/AdditionalFeatures";
 
 const Home = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -13,9 +15,11 @@ const Home = () => {
     <div className="">
       {/*   <SwipeCarousel /> */}
       <GSAPslider />
+
       <div className="flex-1 bg-white">
         <CarCards />
       </div>
+      <Services />
 
       {/* <GradientButton /> */}
     </div>

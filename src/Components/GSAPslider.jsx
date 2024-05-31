@@ -59,6 +59,7 @@ function GSAPslider() {
     gsap.fromTo(
       `.name-${currentIndex}`,
       {
+        x: 0,
         y: 0,
         borderRadius: "0%",
         yoyo: false,
@@ -66,7 +67,8 @@ function GSAPslider() {
         opacity: 0,
       },
       {
-        y: 0,
+        y: 100,
+        x: 100,
         repeat: 0,
         yoyo: false,
         rotation: 0,
