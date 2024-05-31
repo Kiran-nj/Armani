@@ -14,7 +14,7 @@ function SecondHeader() {
     gsap.fromTo(
       ".comp",
       {
-        x: 1000,
+        x: 0,
         borderRadius: "0%",
         yoyo: false,
         rotation: 0,
@@ -23,10 +23,10 @@ function SecondHeader() {
       {
         x: 0,
         repeat: 0,
-        delay:1.5,
+        delay:0.9,
         yoyo: false,
         rotation: 0,
-        borderRadius: "100%",
+        borderRadius: "25%",
         duration: .7,
         ease: "none",
         stagger:0.3 ,
@@ -54,29 +54,37 @@ function SecondHeader() {
   return (
     <div >
     <div
-      className={`hidden fixed h-screen w-24 lg:flex flex-col justify-around bg-black gap-4 py-2 px-4 text-xl md:text-2xl`}
+      className={`hidden fixed h-screen w-24 lg:flex flex-col justify-around bg-black gap-4 py-2 
+      px-4 text-xl md:text-2xl`}
     >
         <Link to="/" >
-      <div className='flex text-gray-500 items-center gap-2 text-xl rounded-lg p-2  gradient-button comp' >Stock Cars <FaCar/> </div>
+      <div className='hover:text-indigo-600   text-gray-500 items-center gap-2 text-sm  p-2   comp' >
+        < FaCar className='text-3xl ml-3 '/> Stockcars </div>
       </Link>
       <Link to="/sellcar" >
-      <div className='flex text-gray-500 items-center gap-2 text-xl  rounded-lg p-2 comp  gradient-button'>Sell Cars <FaCar/> </div>
+      <div className=' hover:text-indigo-600 text-gray-500 items-center gap-2 text-sm   p-2 comp  '>
+        <FaCar className='text-3xl ml-3 '/> Sellcars  </div>
       </Link>
-      <div className='flex text-gray-500 items-center gap-2 text-xl rounded-lg p-2  comp gradient-button'>Showroom <FaShop/> </div>
-      <div className='flex text-gray-500 items-center gap-2 text-xl rounded-lg p-2 comp  gradient-button'>Gallery <FaImage/> </div>
+      <div className=' hover:text-indigo-600 text-gray-500 items-center gap-2 text-sm  p-2  comp '> 
+      <FaShop className='text-3xl ml-3'/>Showroom  </div>
+      <div className=' hover:text-indigo-600 text-gray-500 items-center gap-2 text-sm  p-2 comp  '>
+         <FaImage className='text-3xl ml-3'/>Gallery  </div>
       <Link to="/insurance" >
-      <div className='flex text-gray-500 items-center gap-2 text-xl rounded-lg p-2 comp gradient-button' >Insurance <FaHelmetSafety/> </div>
+      <div className=' hover:text-indigo-600 text-gray-500 items-center gap-2 text-sm  p-2 comp ' > 
+      <FaHelmetSafety className='text-3xl ml-3'/> Insurance</div>
       </Link>
-      <div className='flex text-gray-500 items-center gap-2 text-xl rounded-lg p-2  comp gradient-button'>EMI-Calculator <FaCalculator/> </div>
-      <div className='flex text-gray-500 items-center gap-2 text-xl rounded-lg p-2  comp gradient-button'>Servicing <GiAutoRepair/> </div>
+      <div className=' hover:text-indigo-600  text-gray-500 items-center gap-2 text-sm  p-2  comp '> 
+      <FaCalculator className='text-3xl ml-3'/>  <p className='ml-4'>EMI</p> <p>Calculator</p></div>
+  {/*     <div className=' text-gray-500 items-center gap-2 text-sm rounded-lg p-2  comp '> 
+      <GiAutoRepair className='text-3xl '/> Servicing </div> */}
     </div>
     <div className=' lg:hidden md:flex'> 
         <div className='flex justify-around gap-9'>
         <Link to="/" >
-      <div className='flex  items-center gap-2  gradient-button comp ' >Stock Cars <FaCar/> </div>
+      <div className='flex  items-center gap-2   comp ' >Stock Cars <FaCar/> </div>
       </Link>
       <Link to="/sellcar" >
-      <div className='flex  items-center gap-2 gradient-button comp'>Sell Cars <FaCar/> </div>
+      <div className='flex  items-center gap-2  comp'>Sell Cars <FaCar/> </div>
       </Link>
       <div className='flex items-center gap-2  gradient-button comp'>Servicing <GiAutoRepair/> </div>
       </div>
