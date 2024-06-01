@@ -1,6 +1,7 @@
 import React from 'react'
 import {Latest_Products} from '../Components/Data'
 import FilterSearch from './FilterSearch';
+import { Link } from 'react-router-dom';
 
 function CarCards() {
 
@@ -33,7 +34,9 @@ function CarCards() {
                   </div>
                 </div>
                 <div className="text-center font-semibold text-lg text-green-600 mb-4">₹{product.price.toLocaleString()}</div>
+                <Link to='/products/${product.id}' >
                 <button className="bg-gradient-to-r from-[#a62965]  to-[#7636cf] text-white font-semibold py-2 px-4 rounded w-full">SEE DETAIL</button>
+                </Link>
               </div>
             ))}
           </div>
