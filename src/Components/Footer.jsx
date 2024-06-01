@@ -49,14 +49,13 @@ function Footer() {
         <div>
           <h2 className="text-lg font-bold mb-4 footer">Amani Motors</h2>
           <p className="footer">
-            C-4, 1st floor, Rajouri garden, Ring road, Next to BMW showroom,
-            Kochi 682028
+          Pipeline Rd, near AKSHAYA CENTER, Karimakkad, Thrikkakara, Edappally, Ernakulam, Kochi, Kerala 682021
           </p>
           <p className="flex items-center mt-4 footer">
-            <FaPhone className="mr-2" /> +91-8888588886
+            <FaPhone className="mr-2" /> +91 9037696969
           </p>
           <p className="flex items-center mt-2 footer">
-            <FaEnvelope className="mr-2" /> info@amanimotors.co.in
+            <FaEnvelope className="mr-2" />info@amanimotors.in
           </p>
         </div>
 

@@ -33,9 +33,9 @@ function CarCards() {
                     <span>{product.kms_driven.toLocaleString()} KMS</span>
                   </div>
                 </div>
-                <div className="text-center font-semibold text-lg text-green-600 mb-4">₹{product.price.toLocaleString()}</div>
-                <Link to='/products/${product.id}' >
-                <button className="bg-gradient-to-r from-[#a62965]  to-[#7636cf] text-white font-semibold py-2 px-4 rounded w-full">SEE DETAIL</button>
+                <div className="text-center font-semibold text-lg text-zinc mb-4">₹{product.price.toLocaleString()}</div>
+                <Link to={`/products/${product.id}`} >
+                <button className="bg-gradient-to-r from-gray-800  to-gray text-white font-semibold py-2 px-4 rounded w-full">SEE DETAIL</button>
                 </Link>
               </div>
             ))}

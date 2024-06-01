@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { FaCableCar, FaHelmetSafety, FaShop } from "react-icons/fa6";
 import { GiAutoRepair } from "react-icons/gi";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import gsap from "gsap/gsap-core";
 import { ScrollTrigger } from "gsap/all";
 gsap.registerPlugin(ScrollTrigger);
@@ -58,66 +58,82 @@ function SecondHeader() {
   return (
     <div className="w-full">
       <div
-        className={`hidden md:flex fixed h-screen  flex-col  justify-between py-2 px-1 text-xs md:text-sm`}
+        className={`hidden md:flex fixed bg-gray-900 h-screen  flex-col  justify-between py-2 text-xs md:text-sm`}
       >
-        <Link
+        <NavLink
           to="/"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaHome className="text-xl " />
           <span className="text-xs">HOME</span>
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/products"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaCarSide className="text-xl " />
           <span className="text-xs flex justify-center ">STOCK CARS</span>
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/sellcar"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaCar className="text-xl " />
           <span className="text-xs flex justify-center ">SELL CARS</span>
-        </Link>
-        <Link
-          to="/"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+        </NavLink>
+        <NavLink
+          to="/showroom"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaShop className="text-xl " />
           <span className="text-xs flex justify-center ">SHOWROOM</span>
-        </Link>
-        <Link
-          to="/"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+        </NavLink>
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaImage className="text-xl " />
           <span className="text-xs flex justify-center ">GALLERY</span>
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/insurance"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaHelmetSafety className="text-xl " />
           <span className="text-xs flex justify-center ">INSURANCE</span>
-        </Link>
-        <Link
+        </NavLink>
+        <NavLink
           to="/about"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaHelmetSafety className="text-xl " />
           <span className="text-xs flex justify-center ">ABOUT US</span>
-        </Link>
-        <Link
-          to="/"
-          className="hover:text-white  text-gray-500 flex flex-col justify-center items-center"
+        </NavLink>
+        <NavLink
+          to="/emi"
+          className={({ isActive }) =>
+            `${isActive ? 'bg-gray-200 text-white' : 'text-gray-500'} hover:text-white px-1 py-2 hover:bg-gray-200 flex flex-col justify-center items-center`
+          }
         >
           <FaCalculator className="text-xl " />
           <span className="text-xs flex flex-col justify-center items-center ">
             EMI<p>CALCULATOR</p>
           </span>
-        </Link>
+        </NavLink>
       </div>
     </div>
   );

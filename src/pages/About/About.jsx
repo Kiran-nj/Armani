@@ -5,6 +5,10 @@ gsap.registerPlugin(ScrollTrigger);
 
 const About = () => {
   useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+  useEffect(() => {
     gsap.fromTo(
       ".individualDirectors",
       {
@@ -112,10 +116,23 @@ const About = () => {
         },
       }
     );
+
+    gsap.to(".about-section", {
+      scrollTrigger: {
+        trigger: ".about-section",
+        start: "top center",
+        end: "bottom center",
+        scrub: true,
+        // markers: true,
+      },
+      opacity: 1,
+      y: 0,
+      duration: 1
+    });
   }, []);
 
   return (
-    <div className="h-auto py-5">
+    <div className="h-auto py-5 about-section">
       <header
         className="aboutus h-64 bg-gray-300 text-2xl font-bold flex flex-col gap-1 justify-center items-center opacity-80"
         style={{

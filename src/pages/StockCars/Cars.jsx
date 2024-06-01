@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CarCards from "../../Components/CarCards";
 import { Latest_Products } from "../../Components/Data";
+import { Link } from "react-router-dom";
 
 const Cars = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="flex-1 ">
       <div className="relative h-80">
@@ -64,12 +68,12 @@ const Cars = () => {
                   <span>{product.kms_driven.toLocaleString()} KMS</span>
                 </div>
               </div>
-              <div className="text-center font-semibold text-lg text-green-600 mb-4">
+              <div className="text-center font-semibold text-lg text-zinc mb-4">
                 ₹{product.price.toLocaleString()}
               </div>
-              <button className="bg-gradient-to-r from-gray-800  to-gray text-white font-semibold py-2 px-4 rounded w-full">
-                SEE DETAIL
-              </button>
+              <Link to={`/products/${product.id}`} >
+                <button className="bg-gradient-to-r from-gray-800  to-gray text-white font-semibold py-2 px-4 rounded w-full">SEE DETAIL</button>
+                </Link>
             </div>
           ))}
         </div>

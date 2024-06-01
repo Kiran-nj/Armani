@@ -78,7 +78,7 @@ function GSAPslider() {
       },
       {
         y: -100,
-        x: 100,
+        x: 200,
         repeat: 0,
         yoyo: false,
         rotation: 0,
@@ -163,26 +163,34 @@ function GSAPslider() {
         {Imagearr.map((image, index) => (
           <React.Fragment key={index}>
             <div
-              className={`w-1/2 flex justify-center items-center mb-40 name-${index} ${
-                currentIndex === index ? "block" : "hidden"
-              }`}
+              className={`  w-1/2 flex justify-start items-center mb-20 name-${index} ${currentIndex === index ? "block" : "hidden"
+                }`}
             >
+              <div className="pl-5">
               <p className="text-white text-2xl font-extrabold name">
                 {Namearr[index]}
               </p>
-            </div>
-
-            <div
-              className={`w-1/2 flex justify-center items-center mb-40 price-${index} ${
-                currentIndex === index ? "block" : "hidden"
-              }`}
-            >
-              <p className="text-slate-500 text-2xl font-extrabold price">
+              <p className="text-slate-500 text-sm font-medium price">
+                {ModelArr[index]}
+              </p>
+              <p className="text-slate-500 text-xl font-bold price">
                 {PriceArr[index]}
               </p>
+              </div>
+              
             </div>
 
-            <div
+            {/* <div
+              className={` w-1/2 flex justify-start items-center mb-20 price-${index} ${currentIndex === index ? "block" : "hidden"
+                }`}
+            >
+              <p className="text-slate-500 text-2xl font-bold price">
+                {PriceArr[index]}
+              </p>
+
+            </div> */}
+
+            {/* <div
               className={`w-1/2 flex justify-center items-center mb-40 model-${index} ${
                 currentIndex === index ? "block" : "hidden"
               }`}
@@ -190,12 +198,11 @@ function GSAPslider() {
               <p className="text-slate-500 text-xl font-extrabold model">
                 {ModelArr[index]}
               </p>
-            </div>
+            </div> */}
 
             <div
-              className={`w-1/2 flex justify-center items-center car-${index} ${
-                currentIndex === index ? "block" : "hidden"
-              }`}
+              className={`w-1/3 p-10 flex justify-center items-center car-${index} ${currentIndex === index ? "block" : "hidden"
+                }`}
             >
               <img
                 className="w-[450px] car "
