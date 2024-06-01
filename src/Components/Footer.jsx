@@ -17,7 +17,7 @@ function Footer() {
       ".footer",
       {
         x: 0,
-        y: 100,
+        y: -100,
         borderRadius: "0%",
         yoyo: false,
         rotation: 0,
@@ -35,21 +35,22 @@ function Footer() {
         stagger: 0.1,
         opacity: 1,
         scrollTrigger: {
-          trigger: ".footer",
-          toggleActions: "restart none none none  ",
+          trigger: ".divfooter",
+          toggleActions: "restart none none none",
         },
       }
     );
   }, []);
 
   return (
-    <div className="bg-black text-white p-10 ">
+    <div className="bg-black text-white p-10 divfooter ">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Contact Information */}
         <div>
           <h2 className="text-lg font-bold mb-4 footer">Amani Motors</h2>
           <p className="footer">
-            C-4, 1st floor, Rajouri garden, Ring road, Next to BMW showroom, Kochi 682028
+            C-4, 1st floor, Rajouri garden, Ring road, Next to BMW showroom,
+            Kochi 682028
           </p>
           <p className="flex items-center mt-4 footer">
             <FaPhone className="mr-2" /> +91-8888588886
